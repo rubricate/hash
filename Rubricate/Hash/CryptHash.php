@@ -11,7 +11,7 @@
 namespace Rubricate\Hash;
 
 
-class CryptHash
+class CryptHash implements ICryptHash
 {
 
     private $algorithm;
