@@ -19,7 +19,10 @@ class CryptHash implements ICryptHash
 
 
 
-    public function __construct($algorithm, $salt = '1') 
+    public function __construct(
+        IGetAlgorithmHash   $algorithm, 
+        IGetSaltHash        $salt
+    ) 
     {
         $this->algorithm = $algorithm;
         $this->salt      = $salt;
@@ -32,8 +35,8 @@ class CryptHash implements ICryptHash
     public function getStr($str)
     {
         $initHash = hash_init(
-            $this->algorithm, HASH_HMAC, 
-            $this->salt
+            $this->algorithm->getAlgorithm(), HASH_HMAC, 
+            $this->salt->getSalt()
         );
 
         hash_update($initHash, $str);
