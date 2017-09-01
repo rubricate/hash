@@ -1,0 +1,16 @@
+{
+    "name": "rubricate/hash",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Estefanio NS",
+            "email": "estefanions@gmail.com"
+        }
+    ],
+    "require": { },
+    "autoload": {
+        "psr-4": {
+            "Rubricate\\Hash\\": "Rubricate/Hash/"
+        }
+    }
+}
