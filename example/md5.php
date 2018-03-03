@@ -10,9 +10,8 @@ use Rubricate\Hash\SaltHash;
 
 $h = new CryptHash(
     
-     new AlgorithmHash('md5'),
-     new SaltHash('YOUR_SALT')
-
+    new AlgorithmHash('md5'),
+    new SaltHash('YOUR_SALT')
 );
 
 $password = 'your_secret_password';

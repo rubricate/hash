@@ -22,8 +22,7 @@ class CryptHash implements ICryptHash
     public function __construct(
         IGetAlgorithmHash   $algorithm, 
         IGetSaltHash        $salt
-    ) 
-    {
+    ) { 
         $this->algorithm = $algorithm;
         $this->salt      = $salt;
     } 
