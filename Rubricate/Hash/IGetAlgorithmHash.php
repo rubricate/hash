@@ -2,10 +2,8 @@
 
 /*
  * @package     RubricatePHP
- * @author      Estefanio NS <estefanions AT gmail DOT com>
- * @link        http://rubricate.github.io
- * @copyright   2017 
- * 
+ * @author      Estefanio N Santos <estefanions AT gmail DOT com>
+ * @link        http://rubricate.github.io/hash
  */
 
 namespace Rubricate\Hash;
@@ -15,5 +13,4 @@ interface IGetAlgorithmHash
 {
     public function getAlgorithm();
 }    
-
 

@@ -2,10 +2,8 @@
 
 /*
  * @package     RubricatePHP
- * @author      Estefanio NS <estefanions AT gmail DOT com>
- * @link        http://rubricate.github.io
- * @copyright   2017 
- * 
+ * @author      Estefanio N Santos <estefanions AT gmail DOT com>
+ * @link        http://rubricate.github.io/hash
  */
 
 namespace Rubricate\Hash;
@@ -20,9 +18,6 @@ class AlgorithmHash implements IGetAlgorithmHash
         $this->algorithm = $algorithm;
     }
 
-
-
-
     
     public function getAlgorithm()
     {
@@ -30,9 +25,5 @@ class AlgorithmHash implements IGetAlgorithmHash
     }
 
 
-
-
-
 }    
-
 

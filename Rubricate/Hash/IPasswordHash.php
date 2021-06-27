@@ -4,13 +4,14 @@
  * @package     RubricatePHP
  * @author      Estefanio N Santos <estefanions AT gmail DOT com>
  * @link        http://rubricate.github.io/hash
+ * 
  */
 
 namespace Rubricate\Hash;
 
 
-interface IGetSaltHash
+interface IPasswordHash
 {
-    public function getSalt();
+    public function getPassword($password);
 }    
 
