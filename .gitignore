@@ -1,3 +1,4 @@
+tags
 *.vim
-*.lab.*
-lab/
+*.test.*
+test/
