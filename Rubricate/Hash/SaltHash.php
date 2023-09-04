@@ -1,14 +1,6 @@
 <?php 
 
-/*
- * @package     RubricatePHP
- * @author      Estefanio N Santos <estefanions AT gmail DOT com>
- * @link        http://rubricate.github.io/hash
- * 
- */
-
 namespace Rubricate\Hash;
-
 
 class SaltHash implements IGetSaltHash
 {
@@ -19,12 +11,10 @@ class SaltHash implements IGetSaltHash
         $this->salt = $salt;
     }
 
-
     public function getSalt()
     {
         return $this->salt;
     }
-
 
 }    
 
