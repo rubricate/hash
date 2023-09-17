@@ -1,5 +1,7 @@
 <?php 
 
+declare(strict_types=1);
+
 namespace Rubricate\Hash;
 
 class AlgorithmHash implements IGetAlgorithmHash
@@ -12,7 +14,7 @@ class AlgorithmHash implements IGetAlgorithmHash
     }
 
     
-    public function getAlgorithm()
+    public function getAlgorithm(): string
     {
         return $this->algorithm;
     }

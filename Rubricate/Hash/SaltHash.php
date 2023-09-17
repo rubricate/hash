@@ -1,5 +1,7 @@
 <?php 
 
+declare(strict_types=1);
+
 namespace Rubricate\Hash;
 
 class SaltHash implements IGetSaltHash
@@ -11,7 +13,7 @@ class SaltHash implements IGetSaltHash
         $this->salt = $salt;
     }
 
-    public function getSalt()
+    public function getSalt(): string
     {
         return $this->salt;
     }

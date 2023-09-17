@@ -1,5 +1,7 @@
 <?php 
 
+declare(strict_types=1);
+
 namespace Rubricate\Hash;
 
 class InitHash implements IPasswordHash
@@ -16,14 +18,14 @@ class InitHash implements IPasswordHash
         self::init();
     } 
 
-    public function getPassword($password)
+    public function getPassword($password): string
     {
         hash_update($this->i, $password);
 
         return hash_final($this->i);
     } 
 
-    private function init()
+    private function init(): void
     {
         $i = hash_init(
             $this->a->getAlgorithm(), HASH_HMAC, 
